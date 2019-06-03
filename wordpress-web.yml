@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: wordpress
-        image: wordpress:4-php7.0
+        #Use the image you prefere, changing this line
+        image: wordpress:5.2.1-php7.1-apache 
         # uncomment to fix perm issue, see also https://github.com/kubernetes/kubernetes/issues/2630
         command: ['bash', '-c', 'mkdir -p /var/www/html/wp-content/uploads; chown www-data:www-data /var/www/html/wp-content/uploads && docker-entrypoint.sh apache2-foreground']
         ports:
