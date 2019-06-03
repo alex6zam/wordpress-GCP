@@ -1,6 +1,6 @@
 # wordpress-GCP
 
-To create the Cloud Filestorage instance with the fileshare used in the code use something like this:
+To create the Cloud Filestore instance with the fileshare used in the code use something like this:
 
 $ gcloud filestore instances create nfs-server-2 \
       --project=myproject \
